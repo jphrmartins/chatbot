@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                %d{yyyy-MM-ss HH:mm:ss} -- %-5level -- %msg%n
+            </Pattern>
+        </layout>
+    </appender>
+
+    <appender name="GENERAL" class="ch.qos.logback.core.FileAppender">
+        <file>log/general.log</file>
+        <encoder>
+            <Pattern>
+                %d{yyyy-MM-ss HH:mm:ss} -- %-5level -- %msg%n
+            </Pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="GENERAL"/>
+    </root>
+</configuration>

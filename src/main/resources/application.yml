@@ -1,0 +1,9 @@
+url:
+  weather: http://apiadvisor.climatempo.com.br/api/v1/
+  facebook: https://graph.facebook.com/v2.6/me/messages?access_token=
+  dialogflow: https://api.dialogflow.com/v1/query?v=20150910
+
+token:
+  weather: token=<TOKEN-WEATHER>
+  facebook: <FACEBOOK-TOKEN>
+  dialogflow: <DIALOGFLOW-AGENT-TOKEN> 
